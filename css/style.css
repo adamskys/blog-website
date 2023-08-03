@@ -25,12 +25,13 @@ picture {
 
 .container {
   display: grid;
+  padding: 10px;
   place-items: center;
   grid-template-areas:
     "header"
     "postcards"
     "footer";
-  grid-template-columns: 100%;
+  grid-template-columns: auto;
 }
 
 header {
@@ -62,7 +63,7 @@ header {
 .postcard-section {
   display: grid;
   grid-area: postcards;
-  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
   grid-template-rows: auto;
   gap: 10px;
 }
@@ -70,7 +71,7 @@ header {
 .postcard {
   display: flex;
   flex-direction: column;
-  width: 45ch;
+  max-width: 45ch;
   border: 2px solid gray;
   border-radius: 4px;
   padding: 10px 20px;
@@ -78,6 +79,8 @@ header {
 
 .postcard > p {
   margin: 10px 0;
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 
 .postcard > h2 {
@@ -99,7 +102,10 @@ header {
 }
 
 .postcard > a {
+  width: max-content;
   margin-top: auto;
+  color: #3f82ce;
+  text-decoration: underline;
 }
 
 footer {
