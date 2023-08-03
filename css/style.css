@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font: inherit;
+  font-family: "Lato", sans-serif;
 }
 
 body {
@@ -23,10 +26,30 @@ picture {
 .container {
   display: grid;
   place-items: center;
+  grid-template-areas:
+    "header"
+    "postcards"
+    "footer";
+  grid-template-columns: 100%;
 }
 
 header {
+  display: grid;
   width: 100%;
+  height: 10vh;
+  grid-area: header;
+  align-items: center;
+}
+
+.navbar > ul > h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #606c76;
+}
+
+.navbar > ul > h2 {
+  font-size: 1.2rem;
+  color: #8a9ba9;
 }
 
 .navbar > ul {
@@ -34,4 +57,61 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+}
+
+.postcard-section {
+  display: grid;
+  grid-area: postcards;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+.postcard {
+  display: flex;
+  flex-direction: column;
+  width: 45ch;
+  border: 2px solid gray;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+.postcard > p {
+  margin: 10px 0;
+}
+
+.postcard > h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.postcard > h3 {
+  font-weight: bold;
+  color: #9b4dca;
+}
+
+.postcard:nth-child(even) > h3 {
+  color: #5baf2e;
+}
+
+.postcard > h4 {
+  color: #adadad;
+}
+
+.postcard > a {
+  margin-top: auto;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  display: grid;
+  grid-area: footer;
+  place-items: center;
+}
+
+@media (min-width: 901px) {
+  .postcard-section {
+    grid-template-columns: 1fr 1fr;
+  }
 }
