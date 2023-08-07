@@ -83,6 +83,7 @@ hr {
 
 .about {
   grid-area: about;
+  padding: 10px;
 }
 
 .about .avatar > img {
