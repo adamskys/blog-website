@@ -108,6 +108,9 @@ header {
   color: #3f82ce;
   text-decoration: underline;
 }
+.postcard > a:active {
+  color: #1d5aa1;
+}
 
 footer {
   width: 100%;
@@ -115,6 +118,15 @@ footer {
   display: grid;
   grid-area: footer;
   place-items: center;
+}
+
+@media (max-width: 500px) {
+  .navbar > ul > h1 {
+    font-size: 2rem;
+  }
+  .navbar > ul > h2 {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 901px) {

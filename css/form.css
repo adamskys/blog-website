@@ -1,0 +1,33 @@
+h1 {
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+.subscribe-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.subscribe-form > input {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.subscribe-form > a {
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #fff;
+  transition: ease-in-out 0.2s;
+  border: 0px transparent;
+  border-radius: 5px;
+  background-color: rgb(100, 124, 192);
+}
+
+.subscribe-form > a:hover {
+  background-color: rgb(71, 88, 134);
+}
