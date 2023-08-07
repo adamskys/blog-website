@@ -80,6 +80,8 @@ header {
 }
 
 .postcard {
+  display: flex;
+  flex-direction: column;
 }
 
 .postcard > p {
