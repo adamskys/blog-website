@@ -79,6 +79,7 @@ hr {
 
 .about .info > p {
   margin-top: 5px;
+  font-style: italic;
 }
 
 .about {
@@ -88,6 +89,10 @@ hr {
 
 .about .avatar > img {
   padding: 10px;
+}
+
+.about .avatar figcaption {
+  text-align: center;
 }
 
 .socials {

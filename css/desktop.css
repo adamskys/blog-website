@@ -1,0 +1,5 @@
+@media (min-width: 901px) {
+  .postcard-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}

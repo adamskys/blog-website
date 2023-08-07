@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+@import url(./mobile.css);
+@import url(./desktop.css);
 
 * {
   box-sizing: border-box;
@@ -68,14 +70,16 @@ header {
   grid-template-rows: auto;
   gap: 10px;
 }
-
-.postcard {
+.card-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   max-width: 45ch;
   border: 2px solid gray;
   border-radius: 4px;
   padding: 10px 20px;
+}
+
+.postcard {
 }
 
 .postcard > p {
@@ -112,25 +116,14 @@ header {
   color: #1d5aa1;
 }
 
+.card-image {
+  align-self: center;
+}
+
 footer {
   width: 100%;
   height: 10vh;
   display: grid;
   grid-area: footer;
   place-items: center;
-}
-
-@media (max-width: 500px) {
-  .navbar > ul > h1 {
-    font-size: 2rem;
-  }
-  .navbar > ul > h2 {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 901px) {
-  .postcard-section {
-    grid-template-columns: 1fr 1fr;
-  }
 }

@@ -15,7 +15,7 @@ h1 {
   padding: 5px;
 }
 
-.subscribe-form > a {
+.subscribe-form > button {
   margin-top: 10px;
   padding: 10px 20px;
   text-align: center;
@@ -28,6 +28,6 @@ h1 {
   background-color: rgb(100, 124, 192);
 }
 
-.subscribe-form > a:hover {
+.subscribe-form > button:hover {
   background-color: rgb(71, 88, 134);
 }
